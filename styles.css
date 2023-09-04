@@ -1,0 +1,354 @@
+/* Geral */
+/* *{
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+body {
+	font-family: "Montserrat";
+	font-size: 125%;
+	color: white;
+	width: 100vw;
+}
+ul, ol {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}  
+
+/* Header */
+
+header {
+	position: flex;
+	height: 110vh;
+	background: url(images/coffeBG-unsplash.jpg) center / cover;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.navbar {
+	padding: 4vh 4vw;
+}
+.navbar-brand {
+	padding: 0.5rem;
+}
+.navbar-brand:hover,
+.nav-link:hover {
+	color: #74b0ff;
+	border-radius: 0.5rem;
+	animation: boxShadowLight 0.3s ease forwards;
+}
+h1 {
+	text-shadow: 1rem 0.5rem 1.5rem #4193f7;
+	font-size: 10vh;
+	padding: 4vh;
+	text-align: center;
+}
+.headerSub {
+	background-color: #ffffffa9;
+	height: 60%;
+	margin-top: auto;
+}
+.aboutRow {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 6%;
+	gap: 5%;
+}
+.devFunctionCol,
+.aboutCol {
+	align-items: center;
+}
+.devFunctionCol {
+	border: 1vh solid white;
+}
+.devFunction {
+	color: #5197ff;
+	text-align: left;
+	font-size: 12vh;
+	font-weight: bold;
+}
+.aboutText {
+	font-size: 3vh;
+	text-align: justify;
+	color: #070f3b;
+}
+
+/* Main */
+
+main {
+	background: radial-gradient(circle, #1b2355, #242424);
+}
+.sectionMain{
+	padding: 1% 6%;
+}
+.titleSection {
+	display: inline;
+	text-align: left;
+	font-size: 7vh;
+	padding: 1% 0%;
+	color: white;
+}
+
+/* Projects */
+
+#projects {
+	padding: 4% 6% 0 6%;
+}
+.carousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #53677a;
+	border-radius: 1rem;
+	height: 100%;
+	margin: 4% 0;
+}
+.carousel:hover {
+	animation: boxShadowLight 0.5s ease forwards;
+}
+.carouselProjects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 60vh;
+	width: 100%;
+	padding: 0 7.5%;
+	margin: auto;
+}
+.carouselImageCol,
+.carouselDescriptionCol {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+	margin: 0 2%;
+}
+.carouselProjectImage {
+	width: 90%;
+	height: 90%;
+	border-radius: 1rem;
+	box-shadow: 3px 3px 3px #3b3b3b;
+}
+.carouselProjectImage:hover {
+	opacity: 0.5;
+	animation: boxShadowDark 0.5s ease forwards;
+}
+.projectImage1 {
+	background: url(images/Tindog.png) center / cover;
+}
+.carouselDescriptionCol {
+	flex-direction: column;
+	justify-content: center;
+}
+.titleProjectDescription,
+.textDescription {
+	text-align: center;
+	margin: 2% 0;
+	padding: 2%;
+}
+.textDescription {
+	text-align: justify;
+}
+.styleTech {
+	padding: 0 10px;
+	border-radius: 5px;
+}
+.styleTech:hover {
+	cursor: pointer;
+	animation: boxShadowDark 0.3s ease forwards;
+}
+.styleHTML {
+	background-color: #ff6600;
+}
+.styleCSS {
+	background-color: rgb(0, 132, 255);
+}
+.carousel-control-prev,
+.carousel-control-next {
+	width: 7.5%;
+}
+
+/* Skills */
+
+.skillTypes {
+	margin: 3% 2%;
+	text-align: center;
+}
+.softSkills,
+.hardSkills {
+	display: flex;
+	flex-direction: column;
+}
+.caption {
+	display: inline-block;
+	font-size: 1.75rem;
+	padding: 2%;
+}
+.skillTitle {
+	border-bottom: 2px #435ef8 solid;
+}
+.skillsListIcons {
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: space-around;
+}
+.skillBlock h4 {
+	margin: 0;
+}
+.skillIcon {
+	text-align: left;
+	padding: 4%;
+	margin: 2%;
+	border-radius: 0.5rem;
+}
+.skillIcon:hover {
+	animation: boxShadowLight 0.3s ease forwards;
+}
+.iconSoft {
+	background-color: #435ef8;
+}
+.iconHard {
+	padding: 5%;
+	margin-right: 10%;
+}
+.skillLine {
+	display: inline;
+	text-align: left;
+	padding-left: 25%;
+}
+
+/* Education Background */
+.EBOptions{
+	margin: 4% 2%;;
+}
+.EBOptions, .EBCols {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	text-align: center;
+}
+.EBOptions h3{
+	padding: 1rem;
+	font-size: 2rem;
+}
+.EBCertifies h3 {
+	border-bottom: 4px #00c3ff solid;
+}
+.EBAcademic h3{
+	border-bottom: 4px #6200ff solid;
+}
+.EBCertifies h3:hover, .EBAcademic h3:hover{
+    cursor: pointer;
+}
+.EBCertifies, .EBAcademic, .EBCertifiesCol, .EBAcademicCol{
+	opacity: 1;
+}
+.EBCols{
+	margin: 3% 2% 2% 2%;
+}
+
+.EBActive {
+	animation: EBOptionActive 0.6s ease forwards;
+}
+.EBOff{
+	animation: EBOptionOff 0.6s ease forwards;
+}
+.EBOff h3:hover{
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	background-color: #273f80;
+}
+.EBColActive{
+	animation: EBColActive 0.6s ease forwards;
+}
+.EBColOff{
+	animation: EBColOff 0.6s ease forwards;
+}
+.EBCertifiesList li{
+	display: block;
+	white-space: nowrap;
+	margin: 1.5%;
+}
+.EBCertifiesList li:hover{
+	border-radius: 0.5rem;
+	background-color: #415a66;
+}
+.EBCols .textDescription{
+    margin: 2%;
+}
+
+/* Footer */
+
+/* Contact */
+
+/* Animations */
+
+@keyframes boxShadowLight {
+	from {
+		box-shadow: none;
+	}
+	to {
+		box-shadow: 5px 5px 10px #b6b6b6;
+	}
+}
+@keyframes boxShadowDark {
+	from {
+		box-shadow: none;
+	}
+	to {
+		box-shadow: 5px 5px 10px #3b3b3b;
+	}
+}
+@keyframes EBOptionActive {
+	from {
+		opacity: 0.5;
+		flex: 30;
+		font-size: 2rem;
+	}
+	to {
+		opacity: 1;
+		flex: 60;
+		font-size: 2.5rem;
+	}
+}
+@keyframes EBOptionOff {
+	from {
+		opacity: 1;
+		flex: 60;
+		font-size: 2.5rem;
+	}
+	to {
+		opacity: 0.5;
+		flex: 30;
+		font-size: 1.5rem;
+	}
+}
+@keyframes EBColActive {
+	from {
+		opacity: 0.5;
+		flex: 30;
+		font-size: 1rem;
+	}
+	to {
+		opacity: 1;
+		flex: 60;
+		font-size: 1.5rem;
+	}
+}
+@keyframes EBColOff {
+	from {
+		opacity: 1;
+		flex: 60;
+		font-size: 1.5rem;
+	}
+	to {
+		opacity: 0.5;
+		flex: 30;
+		font-size: 1rem;
+	}
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Cdn bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- My styles -->
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#header" class="navbar-brand">Sobre mim</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#certifies" class="nav-link">Formação</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Diogo Oike</h1>
+        <div class="headerSub">
+            <div class="row aboutRow">
+                <div class="col devFunctionCol">
+                    <h2 class="devFunction">BACKEND DEVELOPER</h2>
+                </div>
+                <div class="col aboutCol">
+                    <p class="aboutText">Prazer, Diogo! Sou um estudante universitário em busca oportunidades como
+                        profissional. Sigo na área de programação/desenvolvimento de software com Python, Java e
+                        Javascript. Sou uma pessoa
+                        comprometida e criativa, sempre buscando aprender mais sobre o universo da tecnologia.
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="sectionMain">
+            <h2 class="titleSection">PROJETOS</h2>
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row carouselProjects">
+                            <div class="col carouselImageCol">
+                                <a class="carouselProjectImage projectImage1"
+                                    href="https://dnaka27.github.io/Tindog_Udemy_Web/" target="_blank"
+                                    alt="Project image">
+                                </a>
+                            </div>
+                            <div class="col carouselDescriptionCol">
+                                <h3 class="titleProjectDescription">TinDoG</h3>
+                                <p class="textDescription">Este é um projeto realizado no curso de programação
+                                    fullstack da Udemy,
+                                    um aplicativo de relacionamento para cachorros,
+                                    esse é o
+                                    <a class="projectName" href="https://github.com/Dnaka27/Tindog_Udemy_Web"
+                                        target="_blank">TINDOG.</a> Nele
+                                    utilizei de <span class="styleTech styleHTML">HTML</span> <span
+                                        class="styleTech styleCSS">CSS</span> voltados ao desenvolvimento frontend.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row carouselProjects">
+                            <span class="carouselProjectImage2"></span>
+                            <div class="col carouselProjectDescription">
+                                <h3 class="titleProjectDescription">TitleProject</h3>
+                                <p class="textDescription">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Neque doloribus hic amet. Quod nam sequi, porro dolore, explicabo at quos
+                                    alias magni, eum exercitationem hic voluptas incidunt dignissimos molestias
+                                    expedita!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row carouselProjects">
+                            <span class="carouselProjectImage3"></span>
+                            <div class="col carouselProjectDescription">
+                                <h3 class="titleProjectDescription">TitleProject</h3>
+                                <p class="textDescription">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Neque doloribus hic amet. Quod nam sequi, porro dolore, explicabo at quos
+                                    alias magni, eum exercitationem hic voluptas incidunt dignissimos molestias
+                                    expedita!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="skills" class="sectionMain">
+            <h2 class="titleSection">HABILIDADES</h2>
+            <div class="row skillTypes">
+                <div class="col col-lg-5 col-md-12 col-sm-12 softSkills">
+                    <h3 class="caption caption skillTitle">Soft skills:</h3>
+                    <div class="skillsListIcons">
+                        <div class="skillBlock">
+                            <i class="skillIcon iconSoft fa-solid fa-users-line fa-flip"></i>
+                            <h4>Trabalho em equipe</h4>
+                        </div>
+                        <div class="skillBlock">
+                            <i class="skillIcon iconSoft fa-solid fa-scale-balanced fa-flip"></i>
+                            <h4>Inteligência emocional</h4>
+                        </div>
+                        <div class="skillBlock">
+                            <i class="skillIcon iconSoft fa-solid fa-lightbulb fa-flip"></i>
+                            <h4>Criatividade</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-12 col-sm-12 SkillImage">
+                    <!-- Imagem ícone de cérebro ou lápis -->
+                </div>
+                <div class="col col-lg-5 col-md-12 col-sm-12 hardSkills">
+                    <h3 class="caption skillTitle">Hard skills:</h3>
+                    <div class="skillsListIcons">
+                        <div class="skillLine"><i
+                                class="skillIcon iconHard fa-brands fa-html5 fa-bounce"></i><span>HTML</span></div>
+                        <div class="skillLine"><i
+                                class="skillIcon iconHard fa-brands fa-css3-alt fa-bounce"></i><span>CSS</span></div>
+                        <div class="skillLine"><i
+                                class="skillIcon iconHard fa-brands fa-square-js fa-bounce"></i><span>Javascript</span>
+                        </div>
+                        <div class="skillLine"><i
+                                class="skillIcon iconHard fa-brands fa-python fa-bounce"></i><span>Python</span></div>
+                        <div class="skillLine"><i
+                                class="skillIcon iconHard fa-brands fa-java fa-bounce"></i><span>Java</span></div>
+                        <div class="skillLine"><i
+                                class="skillIcon iconHard fa-regular fa-c fa-bounce"></i><span>C/C++</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="EB" class="sectionMain">
+            <h2 class="titleSection">FORMAÇÃO</h2>
+            <div class="EBOptions">
+                <div class="EBCertifies EBActive">
+                    <h3>Cursos/certificados</h3>
+                </div>
+                <div class="EBAcademic EBOff">
+                    <h3>Acadêmico</h3>
+                </div>
+            </div>
+            <div class="EBCols">
+                <div class="EBCertifiesCol EBColActive">
+                    <div class="EBCertifiesText">
+                        <ul class="EBCertifiesList">
+                            <li>Cloud concepts</li>
+                            <li>Amazon Cloud Basic</li>
+                            <li>Python Udemy</li>
+                            <li>Potência Tech DIO Data Science</li>
+                            <li>Fullstack web bootcamp Udemy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="EBAcademicCol EBColOff">
+                    <p class="textDescription">
+                        Estudante universitário de Gestão da tecnologia da informação(GTI) no IFSC câmpus Florianópolis.
+                        Na parte de programação realizei lógica de programação utilizando a linguagem C++ e orientação a
+                        objetos utilizando Java. Além disso, aprendi sobre noções básicas de rede e de gestão. Isso em
+                        disciplinas como: Infraestrutura de rede, processos de desenvolvimento de sistemas, gestão de
+                        pessoas e gestão econômica e financeira
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer id="contact" class="sectionMain">
+            <h2 class="titleSection">CONTATO</h2>
+            <!-- Contact Section
+            Icons -->
+        </footer>
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/d099d8b3dd.js" crossorigin="anonymous"></script>
+</body>
+
+</body>
+
+</html>
