@@ -1,33 +1,39 @@
-/* Geral */
-/* *{
-    margin: 0;
-    box-sizing: border-box;
-} */
-
 body {
 	font-family: "Montserrat";
-	font-size: 125%;
+	font-size: 1.25rem;
 	color: white;
-	width: 100vw;
 }
-ul, ol {
+ul,
+ol {
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}  
+}
+
+/* Animated elements */
+
+.navbar-brand:hover,
+.nav-link:hover,
+.carousel:hover,
+.skillIcon:hover,
+.contactIcon:hover {
+	animation: boxShadowLight 0.3s ease forwards;
+}
+.styleTech:hover,
+.carouselProjectImage:hover {
+	animation: boxShadowDark 0.3s ease forwards;
+}
 
 /* Header */
 
 header {
 	position: flex;
-	height: 110vh;
+	height: 110%;
 	background: url(images/coffeBG-unsplash.jpg) center / cover;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 .navbar {
-	padding: 4vh 4vw;
+	padding: 2.5rem;
 }
 .navbar-brand {
 	padding: 0.5rem;
@@ -36,12 +42,11 @@ header {
 .nav-link:hover {
 	color: #74b0ff;
 	border-radius: 0.5rem;
-	animation: boxShadowLight 0.3s ease forwards;
 }
 h1 {
 	text-shadow: 1rem 0.5rem 1.5rem #4193f7;
-	font-size: 10vh;
-	padding: 4vh;
+	font-size: 4rem;
+	padding: 2rem;
 	text-align: center;
 }
 .headerSub {
@@ -56,21 +61,16 @@ h1 {
 	padding: 6%;
 	gap: 5%;
 }
-.devFunctionCol,
-.aboutCol {
-	align-items: center;
-}
 .devFunctionCol {
-	border: 1vh solid white;
+	border: 6px solid white;
 }
 .devFunction {
 	color: #5197ff;
 	text-align: left;
-	font-size: 12vh;
+	font-size: 5rem;
 	font-weight: bold;
 }
 .aboutText {
-	font-size: 3vh;
 	text-align: justify;
 	color: #070f3b;
 }
@@ -80,14 +80,15 @@ h1 {
 main {
 	background: radial-gradient(circle, #1b2355, #242424);
 }
-.sectionMain{
-	padding: 1% 6%;
+.sectionMain {
+	padding: 2% 6%;
 }
 .titleSection {
 	display: inline;
 	text-align: left;
-	font-size: 7vh;
-	padding: 1% 0%;
+	font-size: 3rem;
+	margin: 4% 2%;
+	padding: 1%;
 	color: white;
 }
 
@@ -96,6 +97,7 @@ main {
 #projects {
 	padding: 4% 6% 0 6%;
 }
+
 .carousel {
 	display: flex;
 	justify-content: center;
@@ -104,9 +106,6 @@ main {
 	border-radius: 1rem;
 	height: 100%;
 	margin: 4% 0;
-}
-.carousel:hover {
-	animation: boxShadowLight 0.5s ease forwards;
 }
 .carouselProjects {
 	display: flex;
@@ -124,7 +123,11 @@ main {
 	justify-content: center;
 	align-items: center;
 	height: 90%;
+	width: 100%;
 	margin: 0 2%;
+}
+.carouselDescriptionCol{
+	flex-direction: column;
 }
 .carouselProjectImage {
 	width: 90%;
@@ -134,37 +137,31 @@ main {
 }
 .carouselProjectImage:hover {
 	opacity: 0.5;
-	animation: boxShadowDark 0.5s ease forwards;
 }
 .projectImage1 {
 	background: url(images/Tindog.png) center / cover;
 }
-.carouselDescriptionCol {
-	flex-direction: column;
-	justify-content: center;
-}
 .titleProjectDescription,
 .textDescription {
-	text-align: center;
+	text-align: justify;
 	margin: 2% 0;
 	padding: 2%;
 }
-.textDescription {
-	text-align: justify;
-}
 .styleTech {
-	padding: 0 10px;
+	padding: 0 0.5rem;
 	border-radius: 5px;
-}
-.styleTech:hover {
-	cursor: pointer;
-	animation: boxShadowDark 0.3s ease forwards;
 }
 .styleHTML {
 	background-color: #ff6600;
 }
 .styleCSS {
-	background-color: rgb(0, 132, 255);
+	background-color: #0084ff;
+}
+.styleCPP {
+	background-color: #7700ff;
+}
+.styleJava {
+	background-color: #ff0015;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -174,7 +171,7 @@ main {
 /* Skills */
 
 .skillTypes {
-	margin: 3% 2%;
+	margin: 3% 0;
 	text-align: center;
 }
 .softSkills,
@@ -182,12 +179,10 @@ main {
 	display: flex;
 	flex-direction: column;
 }
-.caption {
+.skillTitle {
 	display: inline-block;
 	font-size: 1.75rem;
 	padding: 2%;
-}
-.skillTitle {
 	border-bottom: 2px #435ef8 solid;
 }
 .skillsListIcons {
@@ -198,16 +193,13 @@ main {
 	justify-content: space-around;
 }
 .skillBlock h4 {
-	margin: 0;
+	margin-bottom: 0;
 }
 .skillIcon {
 	text-align: left;
 	padding: 4%;
-	margin: 2%;
+	margin: 2% 0;
 	border-radius: 0.5rem;
-}
-.skillIcon:hover {
-	animation: boxShadowLight 0.3s ease forwards;
 }
 .iconSoft {
 	background-color: #435ef8;
@@ -223,68 +215,87 @@ main {
 }
 
 /* Education Background */
-.EBOptions{
-	margin: 4% 2%;;
+
+.EBOptions {
+	margin: 2% 0;
+	padding: 2%;
 }
-.EBOptions, .EBCols {
+.EBOptions,
+.EBCols {
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
+	justify-content: space-between;
+	align-items: center;
 	text-align: center;
 }
-.EBOptions h3{
-	padding: 1rem;
+.EBOptions h3 {
+	padding: 0.5rem;
 	font-size: 2rem;
 }
 .EBCertifies h3 {
 	border-bottom: 4px #00c3ff solid;
 }
-.EBAcademic h3{
+.EBAcademic h3 {
 	border-bottom: 4px #6200ff solid;
 }
-.EBCertifies h3:hover, .EBAcademic h3:hover{
-    cursor: pointer;
+.EBCertifies h3:hover,
+.EBAcademic h3:hover {
+	cursor: pointer;
 }
-.EBCertifies, .EBAcademic, .EBCertifiesCol, .EBAcademicCol{
-	opacity: 1;
+.EBCols {
+	margin: 3% 0 2% 0;
 }
-.EBCols{
-	margin: 3% 2% 2% 2%;
-}
-
 .EBActive {
-	animation: EBOptionActive 0.6s ease forwards;
+	animation: EBOptionActive 0.5s ease forwards;
 }
-.EBOff{
-	animation: EBOptionOff 0.6s ease forwards;
+.EBOff {
+	animation: EBOptionOff 0.5s ease forwards;
 }
-.EBOff h3:hover{
+.EBOff h3:hover {
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 1rem;
 	background-color: #273f80;
 }
-.EBColActive{
-	animation: EBColActive 0.6s ease forwards;
+.EBColActive {
+	animation: EBColActive 0.5s ease forwards;
 }
-.EBColOff{
-	animation: EBColOff 0.6s ease forwards;
+.EBColOff {
+	animation: EBColOff 0.5s ease forwards;
 }
-.EBCertifiesList li{
+.EBCertifiesList li {
 	display: block;
 	white-space: nowrap;
-	margin: 1.5%;
+	margin: 1.5% 0;
 }
-.EBCertifiesList li:hover{
+.EBCertifiesList li:hover {
 	border-radius: 0.5rem;
 	background-color: #415a66;
-}
-.EBCols .textDescription{
-    margin: 2%;
 }
 
 /* Footer */
 
-/* Contact */
+.sectionFooter {
+	padding: 0 6% 2% 6%;
+	display: flex;
+	align-items: center;
+}
+footer .titleSection {
+	margin-right: 50%;
+}
+.contactIcons {
+	display: inline;
+	width: 20%;
+}
+.contactIcon {
+	color: #517bd6;
+	display: inline;
+	margin-left: 12%;
+	font-size: 2rem;
+	padding: 3%;
+	border-radius: 0.5rem;
+}
+.contactIcon:hover {
+	color: #0084ff;
+}
 
 /* Animations */
 
@@ -350,5 +361,124 @@ main {
 		opacity: 0.5;
 		flex: 30;
 		font-size: 1rem;
+	}
+}
+@keyframes showActive {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+	50% {
+		display: none;
+		opacity: 0;
+	}
+	100% {
+		display: flex;
+		opacity: 1;
+	}
+}
+@keyframes showOff {
+	from {
+		display: flex;
+		opacity: 1;
+	}
+	to {
+		display: none;
+		opacity: 0;
+	}
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		font-size: 1.25rem;
+	}
+	.navbar-toggler {
+		padding: 1%;
+	}
+	.navbar {
+		font-size: 1rem;
+		padding: 5%;
+	}
+	.navbar-collapse {
+		text-align: left;
+	}
+	.navbar-nav {
+		display: inline-block;
+	}
+	.navbar-nav .nav-item {
+		display: inline-block;
+		padding: 2% 0;
+		margin-left: 0.5rem;
+	}
+	h1 {
+		padding: 8%;
+		font-size: 1.75rem;
+	}
+	.devFunctionCol {
+		margin: 6% 2%;
+	}
+	.devFunction {
+		font-size: 2.75rem;
+		margin: 0;
+	}
+	.aboutText,
+	.textDescription {
+		font-size: 1rem;
+	}
+	.sectionMain {
+		padding: 4%;
+	}
+	.titleSection {
+		display: flex;
+		font-size: 1.75rem;
+	}
+	.carousel {
+		border-radius: 0.5rem;
+		margin-top: 5%;
+		padding: 2% 0;
+	}
+	.carouselProjects {
+		margin: 0;
+		flex-direction: column;
+		padding: 2% 7.5%;
+	}
+	.carouselImageCol,
+	.carouselDescriptionCol {
+		margin: 2% 0;
+	}
+	.titleProjectDescription,
+	.textDescription {
+		text-align: center;
+		margin: 1% 0;
+		padding: 2%;
+	}
+	#skills .row {
+		display: flex;
+		flex-direction: column;
+	}
+	.softSkills,
+	.hardSkills {
+		margin: 4% 0;
+	}
+	.skillBlock h4 {
+		margin-bottom: 5%;
+	}
+	.EBOptions h3 {
+		font-size: 1.2rem;
+	}
+	.EBCols {
+		height: 40vh;
+		flex-direction: column;
+		align-items: center;
+		flex-basis: 100%;
+	}
+	.EBColActive {
+		max-height: 100%;
+		animation: showActive 1.2s forwards;
+	}
+	.EBColOff {
+		animation: showOff 0.4s forwards;
 	}
 }
