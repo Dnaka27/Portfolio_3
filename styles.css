@@ -126,7 +126,7 @@ main {
 	width: 100%;
 	margin: 0 2%;
 }
-.carouselDescriptionCol{
+.carouselDescriptionCol {
 	flex-direction: column;
 }
 .carouselProjectImage {
@@ -144,7 +144,7 @@ main {
 .projectImage2 {
 	background: url(images/Sequence\ game.png) center / cover;
 }
-.projectImage3{
+.projectImage3 {
 	background: url(images/Coin\ Viewer.png) center / cover;
 }
 .titleProjectDescription,
@@ -169,10 +169,10 @@ main {
 .styleJava {
 	background-color: #ff0015;
 }
-.styleJS{
+.styleJS {
 	background-color: #ffd000;
 }
-.stylePY{
+.stylePY {
 	background-color: #0400ff;
 }
 .carousel-control-prev,
@@ -401,8 +401,8 @@ footer .titleSection {
 }
 
 /* Responsive */
-@media (max-width: 374px){
-	.headerSub{
+@media (max-width: 374px) {
+	.headerSub {
 		/* Código para Zfold */
 	}
 }
@@ -491,7 +491,7 @@ footer .titleSection {
 	.EBOptions h3 {
 		font-size: 1.2rem;
 	}
-	.EBCertifiesList{
+	.EBCertifiesList {
 		padding: 0;
 	}
 	.EBCols {
