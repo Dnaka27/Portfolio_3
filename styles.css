@@ -26,7 +26,7 @@ ol {
 
 header {
 	position: flex;
-	height: 110%;
+	height: 110vh;
 	background: url(images/coffeBG-unsplash.jpg) center / cover;
 	display: flex;
 	flex-direction: column;
@@ -389,8 +389,13 @@ footer .titleSection {
 }
 
 /* Responsive */
+@media (max-width: 374px){
+	.headerSub{
+		/* Código para Zfold */
+	}
+}
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
 	.navbar-brand {
 		font-size: 1.25rem;
 	}
@@ -415,6 +420,11 @@ footer .titleSection {
 	h1 {
 		padding: 8%;
 		font-size: 1.75rem;
+	}
+	.headerSub {
+		background-color: #ffffffa9;
+		height: 60%;
+		margin-top: 10%;
 	}
 	.devFunctionCol {
 		margin: 6% 2%;
@@ -450,7 +460,7 @@ footer .titleSection {
 	}
 	.titleProjectDescription,
 	.textDescription {
-		text-align: center;
+		text-align: justify;
 		margin: 1% 0;
 		padding: 2%;
 	}
@@ -469,17 +479,42 @@ footer .titleSection {
 		font-size: 1.2rem;
 	}
 	.EBCols {
-		height: 40vh;
+		height: 50vh;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 		flex-basis: 100%;
 	}
 	.EBColActive {
 		max-height: 100%;
-		animation: showActive 1.2s forwards;
+		animation: showActive 0.9s forwards;
 	}
 	.EBColOff {
 		animation: showOff 0.4s forwards;
 	}
+	.sectionFooter {
+		padding: 0 6% 2% 6%;
+		display: flex;
+		align-items: center;
+	}
+	.contactIcons {
+		display: inline;
+		width: 80%;
+	}
+	.contactIcon {
+		color: #517bd6;
+		display: inline-block;
+		margin-left: 8%;
+		font-size: 1.25rem;
+		padding: 3%;
+		border-radius: 0.5rem;
+	}
+	.contactIcon:hover {
+		color: #0084ff;
+	}
+	footer .titleSection {
+		margin-right: 10%;
+	}
+
 	/* Contact icons */
 }
