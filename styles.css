@@ -141,6 +141,12 @@ main {
 .projectImage1 {
 	background: url(images/Tindog.png) center / cover;
 }
+.projectImage2 {
+	background: url(images/Sequence\ game.png) center / cover;
+}
+.projectImage3{
+	background: url(images/Coin\ Viewer.png) center / cover;
+}
 .titleProjectDescription,
 .textDescription {
 	text-align: justify;
@@ -162,6 +168,12 @@ main {
 }
 .styleJava {
 	background-color: #ff0015;
+}
+.styleJS{
+	background-color: #ffd000;
+}
+.stylePY{
+	background-color: #0400ff;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -450,6 +462,7 @@ footer .titleSection {
 		padding: 2% 0;
 	}
 	.carouselProjects {
+		height: 70vh;
 		margin: 0;
 		flex-direction: column;
 		padding: 2% 7.5%;
@@ -477,6 +490,9 @@ footer .titleSection {
 	}
 	.EBOptions h3 {
 		font-size: 1.2rem;
+	}
+	.EBCertifiesList{
+		padding: 0;
 	}
 	.EBCols {
 		height: 50vh;
