@@ -153,6 +153,9 @@ main {
 	margin: 2% 0;
 	padding: 2%;
 }
+.projectName {
+	color: aqua;
+}
 .styleTech {
 	padding: 0 0.5rem;
 	border-radius: 5px;
@@ -401,11 +404,12 @@ footer .titleSection {
 }
 
 /* Responsive */
-@media (max-width: 374px) {
+
+/* @media (max-width: 374px) {
 	.headerSub {
-		/* Código para Zfold */
+		Código para Zfold
 	}
-}
+} */
 
 @media (max-width: 992px) {
 	.navbar-brand {
@@ -531,6 +535,27 @@ footer .titleSection {
 	footer .titleSection {
 		margin-right: 10%;
 	}
+}
 
-	/* Contact icons */
+@media (min-width: 1500px) {
+	body {
+		font-size: 1.5rem;
+	}
+	h1 {
+		font-size: 5rem;
+	}
+	.devFunctionCol {
+		border: 12px solid white;
+	}
+	.devFunction {
+		font-size: 6rem;
+		font-weight: bold;
+	}
+	.titleSection {
+		font-size: 4rem;
+	}
+	.skillTitle{
+		font-size: 2.25rem;
+	}
+	
 }
