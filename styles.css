@@ -142,10 +142,13 @@ main {
 	background: url(images/Tindog.png) center / cover;
 }
 .projectImage2 {
-	background: url(images/Sequence\ game.png) center / cover;
+	background: url(images/To\ do\ list.png) center / cover;
 }
 .projectImage3 {
 	background: url(images/Coin\ Viewer.png) center / cover;
+}
+.projectImage4 {
+	background: url(images/Backend\ Project.png) center / cover;
 }
 .titleProjectDescription,
 .textDescription {
@@ -154,7 +157,14 @@ main {
 	padding: 2%;
 }
 .projectName {
-	color: aqua;
+	color: blue;
+}
+.projectName:hover {
+	color: #070f3b;
+}
+.styleTool {
+	padding: 0 0.5rem;
+	background-color: #5a899e;
 }
 .styleTech {
 	padding: 0 0.5rem;
@@ -164,7 +174,7 @@ main {
 	background-color: #ff6600;
 }
 .styleCSS {
-	background-color: #0084ff;
+	background-color: #3ca0e7;
 }
 .styleCPP {
 	background-color: #7700ff;
@@ -176,7 +186,10 @@ main {
 	background-color: #ffd000;
 }
 .stylePY {
-	background-color: #0400ff;
+	background-color: #3c00ff;
+}
+.styleReact{
+	background-color: #00ddff;
 }
 .carousel-control-prev,
 .carousel-control-next {
