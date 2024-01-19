@@ -74,6 +74,15 @@ h1 {
 	text-align: justify;
 	color: #070f3b;
 }
+.PY-intro {
+	color: #3c00ff;
+}
+.java-intro {
+	color: #ff0015;
+}
+.JS-intro {
+	color: #ffd000;
+}
 
 /* Main */
 
@@ -169,6 +178,7 @@ main {
 .styleTech {
 	padding: 0 0.5rem;
 	border-radius: 5px;
+	color: white;
 }
 .styleHTML {
 	background-color: #ff6600;
