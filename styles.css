@@ -159,6 +159,9 @@ main {
 .projectImage4 {
 	background: url(images/Backend\ Project.png) center / cover;
 }
+.projectImage5 {
+	background: url(images/Backend\ Project.png) center / cover;
+}
 .titleProjectDescription,
 .textDescription {
 	text-align: justify;
@@ -189,7 +192,7 @@ main {
 .styleCPP {
 	background-color: #7700ff;
 }
-.styleJava {
+.styleJV {
 	background-color: #ff0015;
 }
 .styleJS {
