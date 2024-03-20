@@ -7,6 +7,7 @@ const cores = [
 	"#0400ff",
 	"#ff0015",
 	"#7700ff",
+	"#cc0088"
 ];
 const iconsHard = document.querySelectorAll(".iconHard");
 
